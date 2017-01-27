@@ -7,14 +7,14 @@
 
 // Set this to your frame buffer pixel format. Note Linux frame buffer only supports RGB modes (no BGR modes).
 #ifndef GDISP_LLD_PIXELFORMAT
-	#define GDISP_LLD_PIXELFORMAT		GDISP_PIXELFORMAT_RGB888
+	#define GDISP_LLD_PIXELFORMAT		GDISP_PIXELFORMAT_RGB565
 #endif
 
 #ifdef GDISP_DRIVER_VMT
 
 	#define FBDEV_PATH1		"/dev/fb0"
 	#define FBDEV_PATH2		"/dev/fb/0"			// Optional - comment this out to only try the one device
-	#define USE_SET_MODE						// Optional - comment this out to not to try to set the color mode we want
+	/* #define USE_SET_MODE						// Optional - comment this out to not to try to set the color mode we want */
 	//#define VTDEV_PATH	"/dev/tty0"			// Optional - if defined use this tty to switch from text to graphics mode
 
 	#define _GNU_SOURCE 1

@@ -14,5 +14,6 @@
 # NONE
 #
 
-SRCFLAGS += -march=armv6 -mfpu=vfp -mfloat-abi=hard
-LDFLAGS  += -march=armv6 -mfpu=vfp -mfloat-abi=hard
+# -mfpu=vfp -mfloat-abi=hard
+SRCFLAGS += -march=armv7-a -mfpu=neon -mfloat-abi=hard
+LDFLAGS  += -march=armv7-a -mfpu=neon -mfloat-abi=hard
